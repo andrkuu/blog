@@ -6,7 +6,7 @@ function get_posts(){
     $postHTML = null;
 
     $conn = new mysqli($GLOBALS["serverHost"], $GLOBALS["serverUsername"], $GLOBALS["serverPassword"], $GLOBALS["database"]);
-    $stmt = $conn->prepare("SELECT id,title,postDate,content FROM posts ORDER BY postDate");
+    $stmt = $conn->prepare("SELECT id,title,postDate,content FROM posts ORDER BY postDate DESC ");
     echo $conn->error;
     $stmt->bind_result($idFromDb,$titlefromdb,$postDateFromDb,$contentFromDb);
     $stmt->execute();
