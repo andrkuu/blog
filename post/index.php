@@ -1,6 +1,5 @@
 <?php
-    //require("./config.php");
-    require_once("./functions_blog.php");
+
 ?>
 
 
@@ -12,9 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/kube.css" />
+    <link rel="stylesheet" href="css/kube.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/custom.min.css" />
 
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
@@ -53,8 +52,10 @@
             </div>
             <nav id="navbar-1" class="navbar item-nav">
                 <ul>
-                    <li class="active"><a href="http://andreas.kuuskaru.ee/blog/">Blogi</a></li>
-                    <li><a href="http://andreas.kuuskaru.ee/">Minust</a></li>
+                    <li class="active"><a href="#about">Minust</a></li>
+                    <li><a href="#experiences">Töökogemus</a></li>
+                    <li><a href="#achievements">Haridus</a></li>
+                    <li><a href="#skills">Oskused</a></li>
                 </ul>
             </nav>
         </header>
@@ -68,25 +69,29 @@
         <div class="units-row units-split wrap">
             <div class="unit-20">
                 <img src="img/ava.jpg" alt="Avatar">
-                <h2>
-                    Andreas Kuuskaru
-                </h2>
             </div>
             <div class="unit-80">
                 <h1></h1>
             </div>
-
+            <h2>
+                Andreas Kuuskaru
+            </h2>
         </div>
     </div>
 </div>
 
 <!-- Work Experience -->
-<div class="post section second" id="experiences">
+<div class="work section second" id="experiences">
     <div class="container">
 
-        <?php
-            echo(get_posts());
-        ?>
+
+        <ul class="work-list">
+            <li>21.02.2020</li>
+            <li><a href="https://usesoft.ee/">Usesoft AS</a></li>
+            <div class="ignore-css"></div>
+            <li>Delphi Android arendaja. Rakenduste arendus ProdMaster majandustarkvaraleja. Rakenduste arendus ProdMaster majaja. Rakenduste arendus ProdMaster majaja. Rakenduste arendus ProdMaster maja.</li>
+        </ul>
+
 
     </div>
 </div>

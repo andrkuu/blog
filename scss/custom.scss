@@ -73,6 +73,28 @@
 	}
 }
 
+.post {
+	.post-list {
+		margin-left: 0px;
+
+		li {
+			list-style: none;
+			font-size: em(15);
+			color: lighten($primary, 35%);
+			a {
+				padding-bottom: 5px;
+				font-size: em(19);
+				font-weight: 700;
+				text-decoration: none;
+				border-bottom: 1px solid lighten($primary, 50%);
+				&:hover {
+					border-bottom: 1px solid $primary;
+				}
+			}
+		}
+	}
+}
+
 .work {
 	.work-list {
 		margin-left: 0px;

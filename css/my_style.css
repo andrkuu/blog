@@ -1,0 +1,14 @@
+.post .post-list {
+    margin-left: 0px; }
+.post .post-list li {
+    list-style: none;
+    font-size: 0.9375em;
+    color: #8c8c8c; }
+.post .post-list li a {
+    padding-bottom: 5px;
+    font-size: 1.1875em;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid #b3b3b3; }
+.post .post-list li a:hover {
+    border-bottom: 1px solid #333333; }

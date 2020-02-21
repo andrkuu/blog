@@ -1,6 +1,6 @@
 <?php
-    //require("./config.php");
-    require_once("./functions_blog.php");
+//require("./config.php");
+require_once("./functions_blog.php");
 ?>
 
 
@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/kube.css" />
+    <link rel="stylesheet" href="css/kube.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/custom.css" />
 
@@ -23,23 +23,6 @@
             /* Edit this with your name or anything else */
             content: 'ANDREAS';
         }
-
-        .skills {
-            text-align: left;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            color: white;
-
-        }
-
-        .delphi {width: 100%; height: 100%; background-color: #4CAF50;}
-        .cs {width: 90%; height: 100%; background-color: #84af33;}
-        .java {width: 80%; height: 100%; background-color: #af9b32;}
-        .sql {width: 70%; background-color: #f3af22;}
-        .php {width: 70%; background-color: #f3af22;}
-        .html {width: 50%; background-color: #f3803b;}
-        .js {width: 50%; background-color: #f3803b;}
-        .css {width: 50%; background-color: #f3803b;}
 
     </style>
 </head>
@@ -53,8 +36,10 @@
             </div>
             <nav id="navbar-1" class="navbar item-nav">
                 <ul>
-                    <li class="active"><a href="http://andreas.kuuskaru.ee/blog/">Blogi</a></li>
-                    <li><a href="http://andreas.kuuskaru.ee/">Minust</a></li>
+                    <li class="active"><a href="#about">Minust</a></li>
+                    <li><a href="#experiences">Töökogemus</a></li>
+                    <li><a href="#achievements">Haridus</a></li>
+                    <li><a href="#skills">Oskused</a></li>
                 </ul>
             </nav>
         </header>
@@ -65,18 +50,11 @@
 <div class="intro section" id="about">
     <div class="container">
 
-        <div class="units-row units-split wrap">
-            <div class="unit-20">
-                <img src="img/ava.jpg" alt="Avatar">
-                <h2>
-                    Andreas Kuuskaru
-                </h2>
-            </div>
-            <div class="unit-80">
-                <h1></h1>
-            </div>
 
+        <div class="unit-20">
+            <img src="img/ava.jpg" alt="Avatar">
         </div>
+
     </div>
 </div>
 
@@ -85,7 +63,7 @@
     <div class="container">
 
         <?php
-            echo(get_posts());
+        echo(get_post($_GET["post"]));
         ?>
 
     </div>
